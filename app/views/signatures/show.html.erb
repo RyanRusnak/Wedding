@@ -1,0 +1,17 @@
+<div id="wrapper">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Message:</b>
+  <%= @signature.message %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @signature.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_signature_path(@signature) %> |
+<%= link_to 'Back', signatures_path %>
+</div>

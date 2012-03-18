@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+
+</head>
+<wrapper>
+
+
+	<script type="text/javascript">
+	var theImages = new Array()
+
+	//Random-loading images
+	theImages[0] = 'images/1.jpg' 
+	theImages[1] = 'images/2.jpg' 
+	theImages[2] = 'images/3.jpg' 
+	theImages[3] = 'images/4.jpg' 
+	theImages[4] = 'images/5.jpg' 
+	theImages[5] = 'images/6.jpg' 
+	theImages[6] = 'images/7.jpg' 
+	theImages[7] = 'images/8.jpg'
+	theImages[8] = 'images/9.jpg' 
+	theImages[9] = 'images/10.jpg' 
+	theImages[10] = 'images/11.jpg' 
+
+	var j = 0
+	var p = theImages.length;
+	var preBuffer = new Array()
+
+	for (i = 0; i < p; i++){
+	preBuffer[i] = new Image()
+	preBuffer[i].src = theImages[i]
+	}
+	var whichImage = Math.round(Math.random()*(p-1));
+
+	function showImage(){
+		
+	whichImage = Math.round(Math.random()*(p-1));
+	document.write('<a><img src="'+theImages[whichImage]+'" border=0 width=1252 height=868></a>');
+
+	}
+	
+	function daysLeft(){
+		today = new Date();
+
+		BigDay = new Date("September 15, 2012");
+		msPerDay = 24 * 60 * 60 * 1000 ;
+		timeLeft = (BigDay.getTime() - today.getTime());
+		e_daysLeft = timeLeft / msPerDay;
+		daysLeft = Math.floor(e_daysLeft);
+		
+	document.write(daysLeft);
+    }
+	</script>
+<body>
+<script>showImage();</script>
+<div id="dateBox"></div><div id="dateText">Days to go</div><div id="date"><script>daysLeft();</script></div>
+</body>
+</wrapper>
+</html>
+</html>

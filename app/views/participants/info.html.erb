@@ -1,0 +1,68 @@
+<script>
+
+	navigator.geolocation.getCurrentPosition(GetLocation);
+	
+	function GetLocation(location) 
+	{
+	
+	var lat2  =  37.228774;
+	var lon2 = -80.420716;
+	var lat1 = location.coords.latitude;
+	var lon1 = location.coords.longitude;
+	
+	var R = 6371; // km
+	var dLat = (lat2-lat1)*Math.PI/180;
+	var dLon = (lon2-lon1)*Math.PI/180; 
+	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+	        Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * 
+	        Math.sin(dLon/2) * Math.sin(dLon/2); 
+	var c = 2 * Math.asin(Math.sqrt(a)); 
+	var d = Math.round(R * c);
+
+		document.getElementById("distance").innerHTML = "You are " + d.toString().fontcolor("orange") +" miles away from Virginia Tech!";
+    }
+</script>
+
+<body>
+</br>
+</br>
+</br>
+<div id="distance"><script>GetLocation();</script></div>
+<div id="usNight"><img src="images/usNight.png"></div>
+</br>
+</br>
+</br>
+<div class="title">Hotels</div>
+</br>
+</br>
+<div id="theInn">
+<h1>The Inn at Virginia Tech - Reception</h1>901 Prices Fork Road</br>Blacksburg, VA 24061</br>(540) 231-8000</br>
+<img src="images/theInn.jpeg"></br>
+</div>
+
+<div id="holidayInn">
+<h1>The Holiday Inn - Rehearsal Dinner</h1>900 Prices Fork Rd</br>Blacksburg, VA 24060</br>877-859-5095</br>
+<img src="images/holidayInn.jpeg"></br>
+</div>
+
+</br></br><div class="title">Ceremony</div></br></br>
+<div id="chapel">
+	<h1>War Memorial Chapel</h1>545 Drillfield Drive</br>Blacksburg, VA 24061</br>
+	<img src="images/chapel.jpg"></br>
+</div>
+<div id="chapelInfo">
+	<h1>Information</h1>The ceremony is located on the drill field</br>and is walkable from both hotels</br>
+</div>
+
+</br>
+</br>
+<div class="title">Registry</div>
+</br>
+</br>
+</br>
+<div id="registry">
+<a href="http://www.crateandbarrel.com/gift-registry/guest/find-registry.aspx"><img src="images/crate.png">    
+<a href="http://www.bedbathandbeyond.com/regHome.asp"><img src="images/bed.png">    
+<a href="https://www.belk.com/bridalregistry/bridal_registry.jsp"><img src="images/belk.png">
+</div>
+</body>

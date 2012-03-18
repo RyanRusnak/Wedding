@@ -1,0 +1,256 @@
+body { background-color: black; color: white; }
+
+body, p, ol, ul, td {
+  font-family: handwriting-dakota;
+  font-size:   13px;
+  line-height: 18px;
+}
+h1{
+	font-family:Handwriting-dakota;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #666;
+	text-decoration: none; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#canvasElement{
+	margin-left: auto;
+	margin-right: auto;
+    display: block;
+}
+
+#menuItem{
+    display: inline-block;
+	font-size: 40px;
+	font-family: Handwriting-dakota;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#menu{
+	-moz-box-shadow: 0px 10px 5px black;
+	-webkit-box-shadow: 0px 10px 5px black;
+	box-shadow: 0px 10px 5px black;
+	left:5px;
+	top: 5px;
+	position:absolute;
+	background:black;
+	width:1268px;
+	height:50px;
+}
+
+#wrapper {
+	width: 950px;
+	padding: 0 50px;
+	margin: 0 auto;
+	margin-top:100px;
+	color:white;
+}
+
+
+
+/* Images */
+
+.images {
+	padding: 0;
+	margin-top:100px;
+}
+
+.images li {
+	display: inline-block;
+	padding: 0px;
+	margin: -10px;
+}
+
+.images figure {
+	padding: 10px;
+    margin-top: 80px;
+}
+
+.images figure:hover {
+	-webkit-transform:scale(1.5); /*Webkit: Scale up image to 2x original size*/
+	box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+	-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+	-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+	opacity: 1;
+	z-index:2;
+}
+
+.images img {
+	max-width: 260px;
+	max-height: 250px;
+	border: 1px solid #ccc;
+	-webkit-transition-duration: 1s; /*Webkit: Animation duration*/
+}
+
+.images figure .mask{
+	width: 260px;
+	background-color: black;
+	position: absolute;
+	height: 290px;
+	opacity:0.6;
+	cursor:pointer;
+	-webkit-transition-duration: 0.5s;
+
+}
+
+.images figure:hover .mask{
+	height:0%;
+}
+
+.partyPicGroom{
+	
+}
+
+.partyPicGroom li {
+	display: inline-block;
+	padding: 0px;
+	margin: -10px;
+	width: 200px;
+}
+
+.partyPicGroom img {
+	height:200px;
+	width:150px;
+}
+
+.partyPicBride{
+	margin-left: 500px;
+	margin-top:-860px;
+}
+
+.partyPicBride li {
+	display: inline-block;
+	padding: 0px;
+	width: 200px;
+}
+
+.partyPicBride img {
+	height:200px;
+	width:150px;
+}
+#dateBox {
+	position:absolute;
+	margin-top: -750px;
+	margin-left:910px;
+	background-color:black;
+	height: 120px;
+	width: 240px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-border-radius:15px;
+	opacity:.7;
+}
+#date{
+	font-size:150px;
+	position:absolute;
+	margin-top: -700px;
+	margin-left:900px;
+	font-family:baskerville;
+}
+#dateText{
+	font-size:18px;
+	position:absolute;
+	margin-top: -700px;
+	margin-left:1090px;
+	font-family:Handwriting-dakota;
+	-webkit-transform: rotate(-270deg); 
+	-moz-transform: rotate(-270deg);
+}
+#usNight{
+	height:400px;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#usNight img{
+	height:400px;
+	width:650px;
+}
+#theInn{
+	padding-left:50px;
+}
+#holidayInn{
+	position:absolute;
+	margin-left:650px;
+	margin-top:-378px;
+}
+#holidayInn img{
+	height:265px;
+	width:400px;
+}
+#chapel{
+	padding-left:50px;
+}
+#chapel img{
+	height:265px;
+	width:400px;
+}
+.title{
+	font-size:40px;
+	position:absolute;
+	margin-left:500px;
+}
+#chapelInfo{
+	position:absolute;
+	margin-left:650px;
+	margin-top:-250px;
+}
+#registry{
+	padding-left:150px;
+}
+#distance{
+	position:absolute;
+	margin-left:50px;
+	margin-top:100px;
+	width:400px;
+	height:300px;
+	font-size:50px;
+	line-height:100%;
+}

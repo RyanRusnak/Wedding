@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  picture: MyString
+  name: MyString
+  title: MyString
+  relationship: MyText
+  description: MyText
+
+two:
+  picture: MyString
+  name: MyString
+  title: MyString
+  relationship: MyText
+  description: MyText
