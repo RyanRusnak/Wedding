@@ -9,14 +9,14 @@
     <%= participant.name %></br><%= participant.title %>
 	<figure>
   </li>
-<% break if participant.id > 10; %>
+<% break if participant.id > 9; %>
 
 <% end %>
 </ul>
 
 
 <ul class="partyPicBride">
-<%  Participant.find_each(:start =>10) do |participant| %>
+<%  Participant.find_each(:start =>11) do |participant| %>
  <li>
   <figure>
     <img src=<%= participant.picture %>>
