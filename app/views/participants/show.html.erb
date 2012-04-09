@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<div id= "wrapper">
 <p>
-  <b>Picture:</b>
-  <%= @participant.picture %>
+  <img src="/images/<%= @participant.picture %>">
 </p>
 
 <p>
@@ -11,20 +11,15 @@
 </p>
 
 <p>
-  <b>Title:</b>
   <%= @participant.title %>
 </p>
 
 <p>
-  <b>Relationship:</b>
   <%= @participant.relationship %>
 </p>
 
 <p>
-  <b>Description:</b>
   <%= @participant.description %>
 </p>
 
-
-<%= link_to 'Edit', edit_participant_path(@participant) %> |
-<%= link_to 'Back', participants_path %>
+</div>

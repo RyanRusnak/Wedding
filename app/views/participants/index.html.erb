@@ -5,15 +5,12 @@
 <%  @participants.each do |participant| %>
   <li>
 	<figure>
-    <img src=<%= participant.picture %>>
+    <%= link_to (image_tag participant.picture), participant %>
     <%= participant.name %></br><%= participant.title %>
-    <%= link_to 'Show', participant %></br>
-    <%= link_to 'Edit', edit_participant_path(participant) %>
-    <%= link_to 'Destroy', participant, :confirm => 'Are you sure?', :method => :delete %>
 	<figure>
   </li>
 <% break if participant.id > 10; %>
-</br>
+
 <% end %>
 </ul>
 
@@ -24,15 +21,9 @@
   <figure>
     <img src=<%= participant.picture %>>
     <%= participant.name %></br><%= participant.title %>
-    <%= link_to 'Show', participant %></br>
-    <%= link_to 'Edit', edit_participant_path(participant) %>
-    <%= link_to 'Destroy', participant, :confirm => 'Are you sure?', :method => :delete %>
   <figure>
 	</li>
-	</br>
 <% end %>
 </ul>
-</br>
 
-<%= link_to 'New Participant', new_participant_path %>
 </div>

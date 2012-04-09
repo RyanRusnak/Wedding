@@ -145,7 +145,7 @@ div.field, div.actions {
 }
 
 .partyPicGroom{
-	
+	width: 300px;
 }
 
 .partyPicGroom li {
@@ -161,14 +161,18 @@ div.field, div.actions {
 }
 
 .partyPicBride{
+	width: 300px;
 	margin-left: 500px;
-	margin-top:-860px;
+	margin-top:-2735px;
+	position:absolute;
+	padding-left:150px;
 }
 
 .partyPicBride li {
 	display: inline-block;
 	padding: 0px;
 	width: 200px;
+	margin: -10px;
 }
 
 .partyPicBride img {
