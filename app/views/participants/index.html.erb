@@ -19,7 +19,7 @@
 <%  Participant.find_each(:start =>11) do |participant| %>
  <li>
   <figure>
-    <img src=<%= participant.picture %>>
+    <%= link_to (image_tag participant.picture), participant %>
     <%= participant.name %></br><%= participant.title %>
   <figure>
 	</li>
