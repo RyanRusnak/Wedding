@@ -1,0 +1,14 @@
+development:
+  bucket: 'kirbyAndRyan'
+  access_key_id: 'AKIAJ3JZDPYJNDC7DZTQ'
+  secret_access_key: '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'
+
+test:
+  bucket: 'kirbyAndRyan'
+  access_key_id: 'AKIAJ3JZDPYJNDC7DZTQ'
+  secret_access_key: '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'
+
+production:
+  bucket: 'kirbyAndRyan'
+  access_key_id: 'AKIAJ3JZDPYJNDC7DZTQ'
+  secret_access_key: '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'

@@ -11,6 +11,8 @@ group :production do
   gem 'thin'
 end
 
+gem 'aws-sdk'
+
 # group :development do
 #   gem 'sqlite3'
 # end
