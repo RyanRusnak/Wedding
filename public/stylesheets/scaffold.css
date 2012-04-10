@@ -1,12 +1,12 @@
 body { background-color: black; color: white; }
 
 body, p, ol, ul, td {
-  font-family: handwriting-dakota;
+  font-family: DakotaReg;
   font-size:   13px;
   line-height: 18px;
 }
 h1{
-	font-family:Handwriting-dakota;
+	font-family:DakotaReg;
 }
 
 pre {
@@ -67,8 +67,8 @@ div.field, div.actions {
 
 #menuItem{
     display: inline-block;
-	font-size: 40px;
-	font-family: Handwriting-dakota;
+	font-size: 35px;
+	font-family: DakotaReg;
 	margin-left: 20px;
 	margin-top: 20px;
 }
@@ -257,4 +257,13 @@ div.field, div.actions {
 	height:300px;
 	font-size:50px;
 	line-height:100%;
+}
+
+@font-face { 
+    font-family: Dakota;
+    src: url('../font/Dakota Regular.ttf');
+}
+@font-face { 
+    font-family: DakotaReg;
+    src: url('../font/dakota_regular.otf');
 }
