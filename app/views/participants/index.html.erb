@@ -2,7 +2,7 @@
 <div id= "wrapper">
 	
 <ul class="partyPicGroom">
-<%  @participants.each do |participant| %>
+<%  Participant.find_each(:start =>1) do |participant| %>
   <li>
 	<figure>
     <%= link_to (image_tag participant.picture), participant %>
